@@ -542,6 +542,11 @@ img {
   top: 50%;
   left: 50%;
 
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+
   transform: translateX(-50%) translateY(-50%);
 }
 .modal-btn {
@@ -577,16 +582,6 @@ img {
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
   fill: var(--primary-white-color);
-}
-.form-container {
-  /* position: absolute;
-  top: 72px;
-  left: 24px;
-  right: 24px; */
-  padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
 }
 .modal-title {
   text-align: center;
