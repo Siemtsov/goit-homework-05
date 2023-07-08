@@ -602,11 +602,11 @@ img {
 }
 .form-caption {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 
   font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: var(--light-slate);
 }
 .modal-wrapper {
