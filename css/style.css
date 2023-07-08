@@ -464,10 +464,16 @@ img {
   border-radius: 4px;
   color: var(--primary-white-color);
 
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
   padding-top: 8px;
   padding-left: 16px;
   padding-bottom: 8px;
   width: 264px;
+  height: 40px;
 }
 .footer-input::placeholder {
   color: var(--primary-white-color);
@@ -477,17 +483,22 @@ img {
   position: relative;
 }
 .footer-surbscribe-btn {
-  padding: 8px 64px 8px 24px;
   background-color: var(--iris-color);
   border-radius: 4px;
-  border: 0;
+  border: none;
   color: var(--primary-white-color);
+
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
 
   transition: background-color var(--primary-transition);
@@ -498,9 +509,7 @@ img {
   background-color: var(--ocean-active);
 }
 .surbscribe-icon {
-  position: absolute;
-  bottom: 8px;
-  right: 24px;
+  margin-left: 16px;
 }
 /* MODAL WINDOW */
 .backdrop {
