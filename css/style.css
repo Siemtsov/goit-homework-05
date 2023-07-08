@@ -518,6 +518,48 @@ img {
 .modal-btn:focus .modal-icon {
   fill: var(--primary-white-color);
 }
+.form-container {
+  /* position: absolute;
+  top: 72px;
+  left: 24px;
+  right: 24px; */
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.modal-title {
+  text-align: center;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}
+.user-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+
+  padding-left: 38px;
+  font-size: 18px;
+
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+.user-comment {
+  width: 100%;
+  height: 120px;
+}
 /* PORTFOLIO */
 /* PANEL */
 .panel-list {
