@@ -591,22 +591,26 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  color: var(--primary-navy-blue);
 }
 .modal-form {
   display: flex;
   flex-direction: column;
 }
 .modal-form-label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
-
-  position: relative;
   margin-bottom: 8px;
 }
 .form-caption {
-  color: var(--light-slate);
+  display: block;
+  margin-bottom: 8px;
+
   font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  color: var(--light-slate);
+}
+.modal-wrapper {
+  position: relative;
 }
 .user-input {
   display: block;
@@ -615,27 +619,30 @@ img {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
 
   padding-left: 38px;
   font-size: 18px;
 
   margin-top: 4px;
 
-  transition: outline-color var(--primary-transition);
+  transition: border-color var(--primary-transition);
 }
-.user-input:focus-within {
-  outline-color: var(--iris-color);
+.user-input:focus {
+  border-color: var(--iris-color);
 }
 .form-icon {
   position: absolute;
-  bottom: 11px;
   left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 
   fill: var(--primary-navy-blue);
 
   transition: fill var(--primary-transition);
 }
-.modal-form-label:focus-within .form-icon {
+.user-input:focus + .form-icon {
   fill: var(--iris-color);
 }
 .form-label-comment {
@@ -645,6 +652,8 @@ img {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
 
   padding: 8px 16px;
   margin-top: 4px;
@@ -653,14 +662,14 @@ img {
   line-height: 1.16;
   letter-spacing: 0.48px;
 
-  transition: outline-color var(--primary-transition);
+  transition: border-color var(--primary-transition);
 }
 .form-label-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
   font-family: "Roboto";
 }
 .form-label-comment:focus-within {
-  outline-color: var(--iris-color);
+  border-color: var(--iris-color);
 }
 .policy-label {
   display: flex;
