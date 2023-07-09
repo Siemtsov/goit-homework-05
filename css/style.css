@@ -659,16 +659,16 @@ img {
   margin-top: 4px;
 
   font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 
   transition: border-color var(--primary-transition);
 }
 .form-label-comment::placeholder {
-  color: rgba(46, 47, 66, 0.4);
   font-family: "Roboto";
 }
-.form-label-comment:focus-within {
+.form-label-comment:focus {
   border-color: var(--iris-color);
 }
 .policy-label {
@@ -678,38 +678,25 @@ img {
 
   margin-bottom: 24px;
 }
-.modal-form-custom-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-
-  transition: border-color var(--primary-transition),
-    background-color var(--primary-transition);
-}
-.modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  border-color: var(--ocean-active);
-  background-color: var(--ocean-active);
-}
-.modal-form-checkbox-icon {
-  opacity: 0;
-  transition: opacity var(--primary-transition);
-}
-.modal-form-checkbox:checked
-  + .modal-form-custom-checkbox
-  > .modal-form-checkbox-icon {
-  opacity: 1;
-}
 .modal-form-caption {
   color: var(--light-slate);
   font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.modal-form-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+
+  transition: background-color var(--primary-transition),
+    border var(--primary-transition), fill var(--primary-transition);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 .modal-form-link {
   color: var(--iris-color);
