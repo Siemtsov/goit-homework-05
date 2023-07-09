@@ -740,7 +740,6 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   transition: background-color var(--primary-transition);
-  contain-intrinsic-block-size: var(--ocean-active);
 }
 .form-btn:hover,
 .form-btn:focus,
